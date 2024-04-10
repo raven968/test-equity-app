@@ -14,7 +14,7 @@ return new class extends Migration
         Schema::create('bedrooms', function (Blueprint $table) {
             $table->id();
             $table->string('description', 255);
-            $table->tinyInteger('capacity', 1)->default(2);
+            $table->tinyInteger('capacity')->default(2);
             $table->boolean('active', 1)->default(1);
             $table->timestamps();
         });
